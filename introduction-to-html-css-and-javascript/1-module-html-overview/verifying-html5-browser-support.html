@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifying HTML5 browser support</title>
+  </head>
+  <body>
+    <form id="thisform">
+    </form>
+    <script>
+      // If not supported: type text is fallback
+      var datepicker = document.createElement("input");
+      var formelement = document.getElementById("thisform");
+      datepicker.setAttribute("type", "date");
+      formelement.appendChild(datepicker);
+      if (datepicker.type == 'text') {
+        alert("Date input is not supported");
+      }
+      // If supported
+      var email = document.createElement("input");
+      var br = document.createElement("br");
+      email.setAttribute("type", "email");
+      thisform.appendChild(br);
+      thisform.appendChild(email);
+      if (email.type == "email") {
+        alert("Email input is supported");
+      }
+    </script>
+  </body>
+</html>

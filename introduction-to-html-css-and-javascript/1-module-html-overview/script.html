@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Script with document API</title>
+  </head>
+  <body>
+    <script type="text/javascript" >
+    function textChecker() {
+      var textField1 = document.getElementById('textField1');
+      if (textField1.value == '') {
+        alert("Please type in the field");
+      } else {
+        alert("You entered: " + textField1.value);
+      }    
+    }
+    </script>
+    <input type="text" id="textField1" />
+    <input type="button" onClick="textChecker()" value="Submit" />
+  </body>
+</html>
