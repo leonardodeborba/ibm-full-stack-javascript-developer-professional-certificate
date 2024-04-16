@@ -1,0 +1,135 @@
+body {
+  margin: 10px;
+  background-color: black;
+}
+
+#home {
+  margin-top: -1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  background-color: #483355;
+}
+
+header {
+  font-size: 30px;
+  color: rgb(240, 234, 245);
+  float: left;
+  padding-left: 2cm;
+}
+
+/* Navigation container */
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+/* Navigation buttons */
+.topmenu {
+  color: lightgray;
+  background-color: #483355;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: underline lightgray;
+  border-radius: 1mm;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  background-color: #382742;
+  text-decoration: underline overline lightgray;
+}
+
+/* Container for all three conversion calculator sections */
+#all-conversion-sections {
+  display: grid;
+  justify-content: center;
+}
+
+/* Conversion calculator sections */
+figure {
+  float: left;
+  justify-self: auto;
+  width: 200px;
+}
+
+img {
+  width: 200px;  
+}
+
+figcaption {
+  color: black;
+  font-size: 17px;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  width: fit-content;
+  background-color: rgb(173, 218, 173);
+  border: transparent;
+  border-radius: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.b {
+  display: flex;
+  border-top-style: solid;
+  border-top-width: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.temperature {
+  border-top-color: green;
+}
+
+.weight {
+  border-top-color: coral;
+}
+
+.distance {
+  border-top-color: cyan;
+}
+
+legend {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* Floating icon for the go-home button */
+.iconbutton {
+  width: 40px;
+  height: 40px;
+  background-color: cyan;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+
+}
+
+.iconbutton img {
+  width: 30px;
+}
+
+footer {
+  background-color: lightpink;
+  margin-top: 20px;
+  padding: 10px;
+}
