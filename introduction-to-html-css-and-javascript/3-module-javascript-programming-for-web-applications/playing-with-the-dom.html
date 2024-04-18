@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p id="paragraph1">
+      What's up. <a href="#">Check this out.</a>
+    </p>
+    <p id="paragraph2">
+      Nahh <span>this</span> is <span>crazy</span>.
+    </p>
+    <form id="form1">
+      <input type="text" id="input1" name="input1" />
+      <input type="text" id="input2" name="input2" />
+    </form>
+
+    <script>
+      // Paragraph 1
+      let myParagraph1 = document.getElementById("paragraph1");
+      myParagraph1.childNodes[1].setAttribute("href", "https://google.com");
+      myParagraph1.childNodes[1].setAttribute("target", "_blank");
+
+      // Paragraph2
+      let myParagraph2 = document.getElementById("paragraph2");
+      paragraph2.children[1].innerHTML = "<strong>crazy</strong>"
+      
+      // Input 1
+      let myInput1String = "Hey, I'm input 1!";
+      let myInput1 = document.forms[0].elements[0];
+      myInput1.value = myInput1String;
+
+      // Input 2 
+      myInput2 = document.forms[0].elements[1];
+      myInput2.value = "Yo! Input 2 here."
+    </script>
+
+  </body>
+</html>
