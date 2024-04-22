@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  font-family: Arial;
+  color: white;
+  margin: 0;
+}
+h1 {
+  color: grey;
+  font-family: Verdana;
+}
+
+.maindiv {
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+

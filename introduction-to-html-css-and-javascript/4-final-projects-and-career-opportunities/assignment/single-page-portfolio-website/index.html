@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leonardo de Borba - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Leonardo de Borba
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          leonardodeborbadev@protonmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i0.wp.com/drunkenanimeblog.com/wp-content/uploads/2017/07/1473031501_lain.gif?fit=500%2C352&ssl=1" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Leonardo de Borba! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in absolutely nothing.
+            I have worked on nothing and nothing deployed on IBM Cloud. 
+            I am an avid user of NAVI, IBM Watson Services and have worked on Nothing Assistant, NLU, Nothing analyzer and LuaJIT, just to name a few (no bragging).
+            LUA MENTIONED! BRAZIL MENTIONED!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>1 year experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node</h6>
+          <p>1 year experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Absolute Banger</h3>
+            <ul>
+              <li>Developed a secure banger integrated with djent for a goofy ahh client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Dawg Analyzer</h3>
+            <ul>
+              <li>Developed and deployed a dawg analyzer for the dawgs reviews section of a Dawg platform in order to prevent disguised anteaters using IBM NLU</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Silly Website</h3>
+            <ul>
+              <li>Created a silly multi-page website for a new goober in the gooby industry and integrated it with the absolute banger, using cats as payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Hey Leo, thanks for letting me borrow your lambo last weekend. Also, my cat (that you rescued from a fire) is doing very well. Thanks a lot man, frfr.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Damn you're so handsome, what is your skincare routine?? By the way, thanks for lending me your yacht for the holidays. I owe you one frfr.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Why does it look like it's the same person writing all those recommendations? Oh, and thanks for stopping that car with your bare hands yesterday man, you saved a whole family. Frfr.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>
+        <!-- Add appropriate text here-->
+        Alright, now GET OUT.
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
